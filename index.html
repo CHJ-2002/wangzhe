@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="./js/index.js"></script>
+	<script src="./js/jquery.js"></script>
+	<title>王者荣耀</title>
+	<style>
+		.image {
+			background: url(image/ost-bg.png) no-repeat 0 -41px;
+			width: 230px;
+			height: 40px;
+		}
+
+		.icon {
+			background: url(image/ost-bg.png) no-repeat -150px -134px;
+			width: 11px;
+			height: 11px;
+		}
+
+		.N {
+			display: inline-block;
+			background: url(image/index.png) no-repeat -137px -66px;
+			width: 25px;
+			height: 25px;
+			vertical-align: middle;
+		}
+
+		.H {
+			display: inline-block;
+			background: url(image/index.png) no-repeat -162px -66px;
+			width: 25px;
+			height: 25px;
+			vertical-align: middle;
+		}
+
+		.O {
+			display: inline-block;
+			background: url(image/index.png) no-repeat -136px -4px;
+			width: 27px;
+			height: 27px;
+			vertical-align: middle;
+		}
+
+		.download-pannel {
+			background: url(image/index.png) no-repeat 0 -219px;
+			width: 236px;
+			height: 342px;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+
+		.foot-ieg-logo {
+			background: url(image/spr.png) no-repeat -1px -12px;
+			width: 285px;
+			height: 46px;
+			float: left;
+		}
+
+		.logo1 {
+			background: url(image/spr.png) no-repeat -292px -5px;
+			width: 63px;
+			height: 57px;
+			float: left;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- top -->
+	<div class="top">
+		<ul class="topleft ">
+			<li class="image"></li>
+			<li>
+				<a href="#">
+					<img src="image/top1.jpg">
+					<div class="dnf">
+						<img src="image/top2.jpg" alt="">
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span><img src="image/green_icon.png"></span>
+					成长守护平台
+				</a>
+			</li>
+			<li>
+				<a href="#">腾讯游戏排行榜
+					<p class="icon"></p>
+					<div class="paihangbang">
+						<img src="image/top3.png">
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- herder -->
+	<div class="header">
+		<!-- 导航栏 -->
+		<div class="header-nav">
+			<ul class="clearfix">
+				<li><img src="image/logo.png"></li>
+
+				<li>
+					<a href="#">
+						游戏资料
+						<em>DATA</em>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						内容中心
+						<em>CONTENTS</em>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						赛事中心
+						<em>MATCH</em>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						百态王者
+						<em>CULTURE</em>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						社区互动
+						<em>COMMUNITY</em>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						玩家支持
+						<em>PLAYER</em>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						IP新游
+						<em>NEW GAMES</em>
+					</a>
+				</li>
+				<li>
+					<a href="#"></a>
+				</li>
+
+				<div class="login clearfix">
+					<a href="#"><img src="image/login.png"></a>
+					<div class="unlogin">
+						<a href="#">
+							欢迎登录
+						</a>
+						<p>登录后查看游戏战绩</p>
+					</div>
+				</div>
+			</ul>
+		</div>
+
+		<!-- 二级导航 -->
+		<div class="sub-nav">
+			<ul class="sub-nav-inner">
+				<li class="down-nav">
+					<a href="#">版本介绍</a>
+					<a href="#">游戏介绍</a>
+					<a href="#">英雄资料</a>
+					<a href="#"><i class="H"></i>爆料站</a>
+					<a href="#">
+						<i class="N"></i>世界观体验站
+					</a>
+					<a href="#">游戏壁纸</a></a>
+
+				</li>
+				<li class="down-nav">
+					<a href="#">攻略中心</a>
+					<a href="#">英雄攻略</a>
+					<a href="#">视频中心</a>
+					<a href="#">开放素材库</a>
+					<a href="#">
+						<i class="N"></i>内容共创平台
+					</a>
+
+				</li>
+				<li class="down-nav">
+					<a href="#"><i class="H"></i>KPL</a>
+					<a href="#"><i class="H"></i>挑战者杯</a>
+					<a href="#"><i class="H"></i>全国大赛</a>
+					<a href="#">女子公开赛</a>
+					<a href="#">K甲联赛</a>
+					<a href="#">高校联赛</a>
+					<a href="#">全民赛</a>
+					<a href="#">赛事数据</a>
+				</li>
+				<li class="down-nav">
+					<a href="#">荣耀·传承</a>
+					<a href="#">王者文化站</a>
+					<a href="#">万千世界</a>
+					<a href="#">星光殿堂</a>
+					<a href="#">
+						<i class="N"></i>IP共创计划
+					</a>
+					<a href="#">商户特权</a>
+					<a href="#">
+						<i class="N"></i>龙翼王者卡
+					</a>
+				</li>
+				<li class="down-nav">
+					<a href="#"><i class="H"></i>创意互动营</a>
+					<a href="#"><i class="H"></i>王者营地</a>
+					<a href="#">微信圈子</a>
+					<a href="#">官方微博</a></a>
+					<a href="#">微信公众号</a>
+					<a href="#">手Q订阅号</a>
+				</li>
+				<li class="down-nav">
+					<a href="#">腾讯游戏防沉迷</a>
+					<a href="#"><i class="O"></i>成长守护平台</a>
+					<a href="#">对局环境情报站</a>
+					<a href="#">客服专区</a>
+					<a href="#">礼包兑换</a>
+					<a href="#">自助服务</a>
+				</li>
+				<li class="down-nav">
+					<a href="#">
+						<i class="N"></i>王者荣耀·世界
+					</a>
+					<a href="#">
+						<i class="N"></i>代号：破晓
+					</a>
+					<a href="#">
+						<i class="N"></i>代号：启程
+					</a>
+				</li>
+
+			</ul>
+		</div>
+
+		<div class="main">
+			<div class="main-top">
+				<div class="rotate">
+					<div class="ggBox">
+						<div class="adPic">
+							<a href="javascript:void(0)"><img src="image/banner1.jpg"></a>
+						</div>
+						<div class="adBtn">
+							<div class="adBtn">
+								<a title="大桥孙策情侣皮肤" href="javascript:void(0)" class="on">大桥孙策情侣皮肤</a>
+								<a title="CP大作战上演" href="javascript:void(0)" class="">CP大作战上演</a>
+								<a title="KPL转会期公示" href="javascript:void(0)" class="">KPL转会期公示</a>
+								<a title="克制上官婉儿" href="javascript:void(0)" class="">克制上官婉儿</a>
+								<a title="王者春晚花絮" href="javascript:void(0)" class="">王者春晚花絮</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="center">
+					<div class="center-Tab">
+						<ul>
+							<li><a href="javascript:void(0)">热门</a></li>
+							<li><a href="javascript:void(0)">新闻</a></li>
+							<li><a href="javascript:void(0)">公告</a></li>
+							<li><a href="javascript:void(0)">活动</a></li>
+							<li><a href="javascript:void(0)">赛事</a></li>
+						</ul>
+						<a href="javascript:void(0)" class="tab-more">...</a>
+					</div>
+
+					<div class="center-news">
+						<div class="center-news-list">
+							<ul class="none">
+								<li><a href="#" class="news-title">6月2日全服不停机更新公告</a></li>
+								<li>
+									<a href="#">
+										<span class="news-type">热门</span>
+										<span class="news-title">三街工作室|共创装备即将上线体验服！</span>
+										<em class="news-time">05/31</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type">热门</span>
+										<span class="news-title">宫本武藏英雄品质升级对应的皮肤调整进展【老亚瑟的答疑时间】</span>
+										<em class="news-time">05/31</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type">热门</span>
+										<span class="news-title">【项羽-职棒王牌】局外展示场景方案票选结果公布</span>
+										<em class="news-time">05/30</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type">热门</span>
+										<span class="news-title">王者揭秘|揭秘音频设计的故事</span>
+										<em class="news-time">05/26</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-gonggao">公告</span>
+										<span class="news-title">5月26日全服不停机更新公告</span>
+										<em class="news-time">05/25</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type">热门</span>
+										<span class="news-title">王者好物超品日来啦！快来领取属于你的好物buff吧</span>
+										<em class="news-time">05/25</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type">热门</span>
+										<span class="news-title">项羽职棒王牌&赵云嘻哈天王皮肤优化计划及进展【老亚瑟的答疑时间】</span>
+										<em class="news-time">05/24</em>
+									</a>
+								</li>
+							</ul>
+							<ul class="none">
+								<li><a href="#" class="news-title">6.5世界环境日特别活动|假如低碳生活是演艺圈，你是什么咖位？参与免费抽短鹅</a></li>
+								<li>
+									<a href="#">
+										<span class="news-type news-xinwen">新闻</span>
+										<span class="news-title">蔡小姬探班手记|所有等待，终将重逢——时之恋人星元皮肤海报设计故事</span>
+										<em class="news-time">05/31</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-xinwen">新闻</span>
+										<span class="news-title">三街工作室|共创装备即将上线体验服</span>
+										<em class="news-time">05/31</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-xinwen">新闻</span>
+										<span class="news-title">宫本武藏英雄品质升级对应的皮肤调整进展【老亚瑟的答疑时间】</span>
+										<em class="news-time">05/31</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-xinwen">新闻</span>
+										<span class="news-title">【项羽-职棒王牌】局外展示场景方案票选结果公布</span>
+										<em class="news-time">05/30</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-xinwen">新闻</span>
+										<span class="news-title">项羽职棒王牌&赵云嘻哈天王皮肤优化计划及进展【老亚瑟的答疑时间】</span>
+										<em class="news-time">05/24</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-xinwen">新闻</span>
+										<span class="news-title">三街工作室丨普攻装备共创方案来了</span>
+										<em class="news-time">05/24</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-xinwen">新闻</span>
+										<span class="news-title">【项羽-职棒王牌】局外展示场景方案票选活动开启</span>
+										<em class="news-time">05/24</em>
+									</a>
+								</li>
+							</ul>
+							<ul class="none">
+								<li><a href="#">6月6日部分用户登录异常说明公告</a></li>
+								<li>
+									<a href="#">
+										<span class="news-type news-gonggao">公告</span>
+										<span class="news-title">6月3日体验服停机更新公告</span>
+										<em class="news-time">06/03</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-gonggao">公告</span>
+										<span class="news-title">6月2日体验服停机更新公告</span>
+										<em class="news-time">06/02</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-gonggao">公告</span>
+										<span class="news-title">6月2日全服不停机更新公告</span>
+										<em class="news-time">06/02</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type  news-gonggao">公告</span>
+										<span class="news-title">6月2日局内语音播报、快捷消息异常说明</span>
+										<em class="news-time">06/02</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-gonggao">公告</span>
+										<span class="news-title">6月2日英雄平衡性调整丨盾山、吕布、周瑜优化</span>
+										<em class="news-time">06/01</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-gonggao">公告</span>
+										<span class="news-title">6月2日全服不停机更新公告</span>
+										<em class="news-time">06/01</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-gonggao">公告</span>
+										<span class="news-title">6月1日全服不停机更新公告</span>
+										<em class="news-time">06/01</em>
+									</a>
+								</li>
+							</ul>
+							<ul class="none">
+								<li><a href="#" class="news-title">【夏日挑战】活动开启公告及FAQ</a></li>
+								<li>
+									<a href="#">
+										<span class="news-type news-huodong">活动</span>
+										<span class="news-title">【六月好礼-夏日无双榜】活动开启公告</span>
+										<em class="news-time">06/02</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-huodong">活动</span>
+										<span class="news-title">FMVP马超-无双飞将上线！</span>
+										<em class="news-time">06/02</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-huodong">活动</span>
+										<span class="news-title">【无双飞将的幸运礼】活动开启公告</span>
+										<em class="news-time">06/02</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-huodong">活动</span>
+										<span class="news-title">玉粽袭香千舸竞，端午签到领好礼！</span>
+										<em class="news-time">06/01</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-huodong">活动</span>
+										<span class="news-title">鸿运抽奖，抽六次送一次活动开启公告</span>
+										<em class="news-time">05/30</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-huodong">活动</span>
+										<span class="news-title">王者出征版本更新常见问题解答(画面明暗度调整、更新相关指引)</span>
+										<em class="news-time">05/30</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-huodong">活动</span>
+										<span class="news-title">【项羽-职棒王牌】局外展示场景方案票选活动开启</span>
+										<em class="news-time">05/30</em>
+									</a>
+								</li>
+							</ul>
+							<ul class="none">
+								<li><a href="#" class="news-title">第五届王者荣耀全国大赛合作赛道冠军一览</a></li>
+								<li>
+									<a href="#">
+										<span class="news-type news-saishi">赛事</span>
+										<span class="news-title">冲刺！赛区联赛四大赛区决战时刻</span>
+										<em class="news-time">06/02</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-saishi">赛事</span>
+										<span class="news-title">第八届王者荣耀高校联赛落下战幕！四川托普信息技术职业学院夺得总冠军</span>
+										<em class="news-time">05/30</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-saishi">赛事</span>
+										<span class="news-title">女子公开赛北京分站赛落下帷幕，恭喜NOVA勇夺固定战队区冠军</span>
+										<em class="news-time">05/30</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-saishi">赛事</span>
+										<span class="news-title">电竞舞台共建活动火热进行中，王者荣耀官方高校社团联盟开启全新招募</span>
+										<em class="news-time">05/23</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-saishi">赛事</span>
+										<span class="news-title">“Buff”加持荣耀出征，全国大赛大区决赛即将开幕</span>
+										<em class="news-time">05/21</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-saishi">赛事</span>
+										<span class="news-title">助威王者荣耀高校联赛，电竞舞台共建活动五月热浪来袭</span>
+										<em class="news-time">05/19</em>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="news-type news-saishi">赛事</span>
+										<span class="news-title">李九、天云邀你来上高校解说&主持公开课啦！</span>
+										<em class="news-time">05/18</em>
+									</a>
+								</li>
+							</ul>
+
+
+						</div>
+
+
+					</div>
+				</div>
+
+				<div class="download">
+					<a href="#" class="download-pannel"></a>
+				</div>
+			</div>
+
+			<div class="quick_entrance">
+				<a href="javascript:void(0)"><img src="image/官方爆料.jpg"></a>
+				<a href="javascript:void(0)"><img src="image/王者营地.jpg"></a>
+				<a href="javascript:void(0)"><img src="image/荣耀传承.jpg"></a>
+				<a href="javascript:void(0)"><img src="image/赛事专区.jpg"></a>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<!-- 英雄列表 -->
+	<div class="herolist-row" id="herolist-row">
+
+		<div class="king" id="king">
+			<ul>
+				<li class="current">
+					<a href="#">
+						<img src="./image/m1.jpg" alt="" class="small">
+						<img src="./image/m.png" alt="" class="big">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./image/l1.jpg" alt="" class="small">
+						<img src="./image/l.png" alt="" class="big">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./image/c1.jpg" alt="" class="small">
+						<img src="./image/c.png" alt="" class="big">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./image/w1.jpg" alt="" class="small">
+						<img src="./image/w.png" alt="" class="big">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./image/z1.jpg" alt="" class="small">
+						<img src="./image/z.png" alt="" class="big">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./image/h1.jpg" alt="" class="small">
+						<img src="./image/h.png" alt="" class="big">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./image/t1.jpg" alt="" class="small">
+						<img src="./image/t.png" alt="" class="big">
+					</a>
+				</li>
+			</ul>
+
+			<a href="javascript:void(0)" title="更多英雄" class="more-hero">更<br>多<br>英<br>雄</a>
+
+		</div>
+
+		<div class="herolist-con">
+			<h1 class="herolist-title">英雄介绍</h1>
+			<ul class="herolist-nav" id="nav">
+				<li><a href="javascript:void(0)" class="a">英雄</a></li>
+				<li><a href="javascript:void(0)" class="">局内道具</a></li>
+				<li><a href="javascript:void(0)" class="">召唤师技能</a></li>
+			</ul>
+
+			<div class="herolist-box" id="herolist-box">
+				<div class="clearfix herolist-types">
+					<ul class="types-left">
+						<li>综合</li>
+						<li>定位</li>
+					</ul>
+
+					<ul class="type-ms">
+						<li>
+							<span>
+								<i></i>
+							</span>
+							<label>本周免费</label>
+						</li>
+						<li>
+							<span>
+								<i></i>
+							</span>
+							<label>新手推荐</label>
+						</li>
+					</ul>
+
+					<ul class="type-ms">
+						<li>
+							<span>
+								<i></i>
+							</span>
+							<label>全部</label>
+						</li>
+						<li>
+							<span>
+								<i></i>
+							</span>
+							<label>坦克</label>
+						</li>
+						<li>
+							<span>
+								<i></i>
+							</span>
+							<label>战士</label>
+						</li>
+						<li>
+							<span>
+								<i></i>
+							</span>
+							<label>刺客</label>
+						</li>
+						<li>
+							<span>
+								<i></i>
+							</span>
+							<label>法师</label>
+						</li>
+						<li>
+							<span>
+								<i></i>
+							</span>
+							<label>射手</label>
+						</li>
+						<li>
+							<span>
+								<i></i>
+							</span>
+							<label>辅助</label>
+						</li>
+					</ul>
+
+					<div class="herosearch">
+						<input type="text" id="search" name="search" class="herosearch-input"
+							placeholder="请输入你想要搜索的英雄名">
+						<a href="javascript:void(0);" class="herosearch-icon" title="点击搜索" id="searchBtn"></a>
+					</div>
+				</div>
+
+				<div class="herolist-content">
+					<ul class="herolist" id="herolist">
+					</ul>
+				</div>
+			</div>
+
+			<div class="herolist-box1" id="herolist-box1">
+				<div class="clearfix herolist-types item-types">
+					<ul class="clearfix types-ms parent-type">
+						<li class="current" data-type="0" id="changgui">
+							<span class="ms-radio">
+								<i class="i"></i></span>
+							<label>常规模式</label>
+						</li>
+						<li data-type="1" class="" id="bianjing">
+							<span class="ms-radio">
+								<i class="i"></i>
+							</span>
+							<label>边境突围模式</label>
+						</li>
+					</ul>
+					<ul class="clearfix types-ms sub-type">
+						<li class="current" id="btn1" data-parent-type="0" style="display: block;">
+							<span class="ms-radio">
+								<i class="i"></i>
+							</span>
+							<label>全部</label>
+						</li>
+						<li class="current" id="btn8" data-parent-type="1" style="display: none;">
+							<span class="ms-radio">
+								<i class="i"></i>
+							</span>
+							<label>全部</label>
+						</li>
+						<li id="btn2" data-parent-type="0" style="display: block;" class="">
+							<span class="ms-radio">
+								<i class="i"></i>
+							</span>
+							<label>攻击</label>
+						</li>
+						<li id="btn3" data-parent-type="0" style="display: block;" class="">
+							<span class="ms-radio">
+								<i class="i"></i>
+							</span>
+							<label>法术</label>
+						</li>
+						<li id="btn4" data-parent-type="0" style="display: block;" class="">
+							<span class="ms-radio">
+								<i class="i"></i>
+							</span>
+							<label>防御</label>
+						</li>
+						<li id="btn5" data-parent-type="0" style="display: block;" class="">
+							<span class="ms-radio">
+								<i class="i"></i>
+							</span>
+							<label>移动</label>
+						</li>
+						<li id="btn6" data-parent-type="0" style="display: block;" class="">
+							<span class="ms-radio">
+								<i class="i"></i>
+							</span>
+							<label>打野</label>
+						</li>
+						<li id="btn7" data-parent-type="0" style="display: block;" class="">
+							<span class="ms-radio">
+								<i class="i"></i>
+							</span>
+							<label>游走</label>
+						</li>
+						<li id="btn9" data-parent-type="1" style="display: none;">
+							<span class="ms-radio">
+								<i class="i"></i>
+							</span>
+							<label>装备</label>
+						</li>
+						<li id="btn10" data-parent-type="1" style="display: none;">
+							<span class="ms-radio">
+								<i class="i"></i>
+							</span>
+							<label>道具</label>
+						</li>
+						<li id="btn11" data-parent-type="1" style="display: none;">
+							<span class="ms-radio">
+								<i class="i"></i>
+							</span>
+							<label>额外技能</label>
+						</li>
+					</ul>
+					<div class="herosearch1 itemsearch1">
+						<input type="text" id="search1" name="search1" class="herosearch-input1"
+							placeholder="请输入你想要搜索的道具名">
+						<a href="javascript:void(0);" class="herosearch-icon1" id="searchBtn1"></a>
+					</div>
+				</div>
+
+				<div class="herolist-content">
+					<ul class="herolist" id="herolist1">
+
+					</ul>
+
+					<ul class="herolist" id="herolist2">
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="herolist-box2" id="herolist-box2">
+				<div class="clearfix herolist-types item-types">
+					<ul id="spellList" class="imgtextlist spell-list">
+						<li id="80104" class="current">
+							<img src="./image/80104.jpg" alt="惩击">
+							<p>惩击</p>
+						</li>
+						<li id="80108" class="">
+							<img src="./image/80108.jpg" alt="终结">
+							<p>终结</p>
+						</li>
+						<li id="80110" class="">
+							<img src="./image/80110.jpg" alt="狂暴">
+							<p>狂暴</p>
+						</li>
+						<li id="80109" class="">
+							<img src="./image/80109.jpg" alt="疾跑">
+							<p>疾跑</p>
+						</li>
+						<li id="80102" class="">
+							<img src="./image/80102.jpg" alt="治疗术">
+							<p>治疗术</p>
+						</li>
+						<li id="80105" class="">
+							<img src="./image/80105.jpg" alt="干扰">
+							<p>干扰</p>
+						</li>
+						<li id="80103" class="">
+							<img src="./image/80103.jpg" alt="晕眩">
+							<p>晕眩</p>
+						</li>
+						<li id="80107" class="">
+							<img src="./image/80107.jpg" alt="净化">
+							<p>净化</p>
+						</li>
+						<li id="80121" class="">
+							<img src="./image/80121.jpg" alt="弱化">
+							<p>弱化</p>
+						</li>
+						<li id="80115" class="">
+							<img src="./image/80115.jpg" alt="闪现">
+							<p>闪现</p>
+						</li>
+					</ul>
+					<div id="spellDefail" class="spell-defail">
+						<div class="spell-title">
+							<img src="./image/80104-big.jpg">
+							<h4>惩击</h4>
+							<p class="cons">LV.1解锁</p>
+						</div>
+						<div class="spell-desc">30秒CD：对身边的野怪和小兵造成真实伤害并眩晕1秒</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+
+	</div>
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="foot">
+			<div class="foot-cpright">
+				<div class="foot-lefts">
+					<a href="#" title="腾讯互动娱乐" class="foot-ieg-logo"></a>
+					<a href="#" title="天美工作室群" class="logo1"></a>
+				</div>
+
+				<ul class="foot-links">
+					<li>
+						<a href="javascript:void(0)">
+							腾讯互动娱乐 |
+							服务条款 |
+							隐私保护指引 |
+							儿童隐私保护指引 |
+							腾讯游戏招聘 |
+							腾讯游戏客服 |
+							游戏列表 |
+							广告服务及商务合作</a>
+					</li>
+					<li>COPYRIGHT © 1998 - 2022 TENCENT. ALL RIGHTS RESERVED.</li>
+					<li><a href="javascript:void(0)">腾讯公司版权所有 &nbsp;&nbsp; 网络游戏行业防沉迷自律公约</a></li>
+					<li><a href="javascript:void(0)">工商网监电子标识 | 粤网文[2020]3396-195号|(署)网出证(粤)字第054号</a></li>
+					<li><a href="javascript:void(0)">文网游备字[2016]M-CSG 0059 号|新广出审[2017] 6712号|ISBN 978-7-7979-8408-9</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="foot_bottom foot-tips">
+				<p>
+					<em>抵制不良游戏</em>
+					<em>拒绝盗版游戏</em>
+					<em>注意自我保护</em>
+					<em>谨防受骗上当</em>
+					<em>适度游戏益脑</em>
+					<em>沉迷游戏伤身</em>
+					<em>合理安排时间</em>
+					<em>享受健康生活</em>
+				</p>
+				<p class="intro">《王者荣耀》全部背景故事发生于架空世界“王者大陆”中。相关人物、地理、事件均为艺术创作，并非正史。若因观看王者故事对相关历史人物产生兴趣，建议查阅正史记载。</p>
+				<p class="report">全国文化市场统一举报电话 : 12318</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
